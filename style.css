@@ -1,121 +1,177 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 body {
+  margin: 0;
+  background: linear-gradient(135deg, #17121f, #32152d);
+  color: white;
   font-family: Arial, sans-serif;
-  background-color: #101010;
-  color: white;
-  line-height: 1.6;
-}
-
-header {
-  background-color: #080808;
-  text-align: center;
-  padding: 30px 15px;
-  border-bottom: 3px solid #e50914;
-}
-
-header h1 {
-  color: #ff1b2d;
-  font-size: 42px;
-}
-
-nav {
-  margin-top: 20px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 10px;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #ff1b2d;
-}
-
-section {
-  padding: 45px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-h2 {
-  color: #ff2638;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.hero {
-  text-align: center;
-  padding: 90px 20px;
-  background: linear-gradient(135deg, #290008, #111111);
-}
-
-.hero h2 {
-  font-size: 36px;
-}
-
-.button {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 12px 22px;
-  background: #e50914;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
 }
 
 .members {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 25px;
+  padding: 25px;
 }
 
-.card {
-  background: #242424;
-  border: 1px solid #e50914;
-  padding: 25px 10px;
+.member-card {
+  background: #29232e;
+  border: 2px solid #ff2d75;
+  border-radius: 18px;
+  overflow: hidden;
   text-align: center;
-  border-radius: 10px;
-  font-weight: bold;
+  transition: transform 0.3s;
 }
 
-.card:hover {
-  background: #e50914;
-  transform: translateY(-4px);
+.member-card:hover {
+  transform: translateY(-7px);
+  border-color: #a855f7;
 }
 
-li {
-  margin: 10px 0 10px 25px;
+.member-card img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.member-card h2 {
+  padding: 12px;
+  margin: 0;
+  color: #ffb6d2;
+  font-size: 23px;
+}
+
+@media (max-width: 800px) {
+  .members {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 450px) {
+  .members {
+    grid-template-columns: 1fr;
+  }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111111;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    background: #242424;
+    text-align: center;
+    padding: 25px 15px;
+    border-bottom: 3px solid #e63946;
+}
+
+header h1 {
+    font-size: 38px;
+    letter-spacing: 5px;
+    color: #ff4757;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff4757;
+}
+
+section {
+    padding: 55px 20px;
+    text-align: center;
+    scroll-margin-top: 15px;
+}
+
+.hero {
+    background: linear-gradient(135deg, #401018, #151515);
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 22px;
+    background: #e63946;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    max-width: 900px;
+    margin: 25px auto 0;
+}
+
+.member {
+    background: #292929;
+    padding: 30px 10px;
+    border-radius: 12px;
+    border: 1px solid #e63946;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.member:hover {
+    transform: translateY(-5px);
+    background: #421c23;
+}
+
+#music a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #ff6b81;
+}
+
+#about {
+    background: #202020;
 }
 
 footer {
-  text-align: center;
-  padding: 25px;
-  background: #080808;
-  border-top: 2px solid #e50914;
+    background: #080808;
+    padding: 20px;
+    text-align: center;
+    color: #cccccc;
 }
 
 @media (max-width: 600px) {
-  .members {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    .members-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-  header h1 {
-    font-size: 32px;
-  }
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
 
-  nav a {
-    display: inline-block;
-    margin: 5px;
-  }
+    .hero h2 {
+        font-size: 30px;
+    }
 }
