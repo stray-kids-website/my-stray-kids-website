@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stray Kids Fan Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>STRAY KIDS</h1>
+    <p>Stray Kids Everywhere All Around the World!</p>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#members">Members</a>
+      <a href="#music">Music</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Welcome, STAY!</h2>
+    <p>Discover the music, members and story of Stray Kids.</p>
+    <a class="button" href="#members">Meet the Members</a>
+  </section>
+
+  
+  <section id="members">
+    <h2>Meet the 8 Members</h2>
+    <div class="members">
+      <div class="card">Bang Chan</div>
+      <div class="card">Lee Know</div>
+      <div class="card">Changbin</div>
+      <div class="card">Hyunjin</div>
+      <div class="card">Han</div>
+      <div class="card">Felix</div>
+      <div class="card">Seungmin</div>
+      <div class="card">I.N</div>
+    </div>
+  </section>
+
+  <section id="music">
+    <h2>Popular Songs</h2>
+    <ul>
+      <li>God's Menu</li>
+      <li>MANIAC</li>
+      <li>Thunderous</li>
+      <li>S-Class</li>
+      <li>Chk Chk Boom</li>
+    </ul>
+  </section>
+
+  <section id="about">
+    <h2>About Stray Kids</h2>
+    <p>
+      Stray Kids is a South Korean boy group known for
+      their energetic performances, music and creativity.
+      Their fans are called STAY.
+    </p>
+  </section>
+
+  <footer>
+    <p>Made with love by a STAY fan | Fan-made website</p>
+  </footer>
+
+</body>
+</html>
